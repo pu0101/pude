@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hallo world</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(178, 215, 215);
+      }
+      * {
+        border: 0px solid rgb(112, 176, 162);
+      }
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: rgb(190, 195, 199);
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .colum {
+        flex-direction: column;
+      }
+      .flex2 {
+        flex: 0.05;
+      }
+
+      h1 {
+        text-shadow: 2px 2px #95d804;
+      }
+      .center {
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neirong {
+          flex-direction: column;
+        }
+        /*暂定
+        .neirong {
+          flex-direction: column;
+        }*/
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px" class="baiSe ceBian"></div>
+    <!--主区域-->
+    <div class="flex1 flex colum">
+      <!--我来组成头部-->
+      <div class="center flex2">
+        <h1>oi小伙子</h1>
+      </div>
+      <!--内容-->
+      <div class="flex flex1 neirong">
+        <!--左区域-->
+        <div style="flex: 3" class="flex colum">
+          <!--上级-->
+          <div style="height: 70px" class="center">
+            <p>菜鸟的网站</p>
+          </div>
+
+          <!--下级-->
+          <div class="center">
+            <a href="https://testufo.com/">
+              <img
+                src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1wBFh2.img?w=701&h=441&m=6"
+                width="50px"
+                ;
+                height="30px"
+              />
+            </a>
+          </div>
+        </div>
+        <!--右区域-->
+        <div style="flex: 1"></div>
+      </div>
+    </div>
+  </body>
+</html>
